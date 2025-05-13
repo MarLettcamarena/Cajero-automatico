@@ -1,3 +1,7 @@
+def estado():
+    print("Consultar estado de cuenta")
+    print("usuario consultor:", usuario)
+    print("Su saldo es de: $",saldo)#se imprime el saldo
 def retiro():
    print(f"el usuario {usuario} esta retirando dinero")
    retiro=int(input("cantidad que desee retirar: ")) #ingresa la cantidad del retiro
@@ -40,9 +44,7 @@ while True:#usamos True para que se siga usando el ciclo hasta que este use la o
     print("Menu de opciones: \n 1.Consultar estado de cuenta \n 2.Retirar dinero \n 3.Depositar dinero \n 4.Salir")#menu de opciones
     menu=int(input("Ingrese la opcion deseada: "))#ingreso de opcion
     if menu ==1:#estado de cuenta
-      print("Consultar estado de cuenta")
-      print("usuario consultor:", usuario)
-      print("Su saldo es de: $",saldo)#se imprime el saldo
+      estado()
     elif menu==2: #retirar dinero
       retiro()
     elif menu ==3:#depodito de dinero
